@@ -1,4 +1,14 @@
-data/
-.ipynb_checkpoints
-.bin
 journey/env
+*.db
+
+*.parquet
+*.html
+*.csv
+
+.venv
+venv
+.idea
+**/artifacts/
+**/models/
+
+__pycache__/

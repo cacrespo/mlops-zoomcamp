@@ -16,6 +16,8 @@ Our MLOps Zoomcamp course
 - Subscribe to the [public Google calendar](https://calendar.google.com/calendar/?cid=M3Jzbmg0ZDA2aHVsY2M1ZjcyNDJtODNyMTRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ) (subscription works from desktop only)
 - Start watching course videos! [Course playlist](https://www.youtube.com/playlist?list=PL3MmuxUbc_hIUISrluw_A7wDSmfOhErJK)
 - [Technical FAQ](https://docs.google.com/document/d/12TlBfhIiKtyBv8RnsoJR6F72bkPDGEvPOItJIxaEzE0/edit) 
+- For announcements, join our [Telegram channel](https://t.me/dtc_courses)
+- [Leaderboard](https://docs.google.com/spreadsheets/d/e/2PACX-1vRhinTR4Gpxcud-xX0cPBVqboO8RE5gFY7W2dfgfhzECuPFOaCoo9TVWUTxxrSmzvbZY0D-N1vai8RN/pubhtml)
 
 
 ## Overview
@@ -41,10 +43,17 @@ Data scientists and ML engineers. Also software engineers and data engineers int
 Course start: 16 of May
 
 
+### Asking for help in Slack
+
+The best way to get support is to use [DataTalks.Club's Slack](https://datatalks.club/slack.html). Join the [`#course-mlops-zoomcamp`](https://app.slack.com/client/T01ATQK62F8/C02R98X7DS9) channel.
+
+To make discussions in Slack more organized:
+
+* Follow [these recommendations](asking-questions.md) when asking for help
+* Read the [DataTalks.Club community guidelines](https://datatalks.club/slack/guidelines.html)
+
+
 ## Syllabus
-
-This is a draft and will change. 
-
 
 ### [Module 1: Introduction](01-intro)
 
@@ -71,46 +80,48 @@ This is a draft and will change.
 [More details](02-experiment-tracking)
 
 
-### Module 3: Orchestration and ML Pipelines
+### [Module 3: Orchestration and ML Pipelines](03-orchestration)
 
-* ML Pipelines: introduction
-* Prefect
+* Workflow orchestration
+* Prefect 2.0
 * Turning a notebook into a pipeline
-* Kubeflow Pipelines
-* Homework 
-
-
-### Module 4: Model Deployment 
-
-* Batch vs online
-* For online: web services vs streaming
-* Serving models in Batch mode
-* Web services
-* Streaming (Kinesis/SQS + AWS Lambda)
+* Deployment of Prefect flow
 * Homework
 
-
-### Module 5: Model Monitoring
-
-* ML monitoring vs software monitoring 
-* Data quality monitoring
-* Data drift / concept drift 
-* Batch vs real-time monitoring 
-* Tools: Evidently, Prometheus and Grafana
-* Homework 
+[More details](03-orchestration)
 
 
-### Module 6: Best Practices
+### [Module 4: Model Deployment](04-deployment)
 
-* Devops
-* Virtual environments and Docker
-* Python: logging, linting
-* Testing: unit, integration, regression 
-* CI/CD (github actions)
-* Infrastructure as code (terraform, cloudformation)
-* Cookiecutter
-* Makefiles
+* Three ways of model deployment: Online (web and streaming) and offline (batch)
+* Web service: model deployment with Flask
+* Streaming: consuming events with AWS Kinesis and Lambda
+* Batch: scoring data offline
 * Homework
+
+[More details](04-deployment)
+
+
+### [Module 5: Model Monitoring](05-monitoring)
+
+* Monitoring ML-based services
+* Monitoring web services with Prometheus, Evidently, and Grafana
+* Monitoring batch jobs with Prefect, MongoDB, and Evidently
+* Homework
+
+[More details](05-monitoring)
+
+
+### [Module 6: Best Practices](06-best-practices)
+
+* Testing: unit, integration
+* Python: linting and formatting
+* Pre-commit hooks and makefiles
+* CI/CD (Github Actions)
+* Infrastructure as code (Terraform)
+* Homework
+
+[More details](06-best-practices)
 
 
 ### Module 7: Processes
@@ -118,22 +129,15 @@ This is a draft and will change.
 * CRISP-DM, CRISP-ML
 * ML Canvas
 * Data Landscape canvas
-* [MLOps Stack Canvas](https://miro.com/miroverse/mlops-stack-canvas/)
+* MLOps Stack Canvas
 * Documentation practices in ML projects (Model Cards Toolkit)
+
+(In October)
 
 
 ### Project
 
 * End-to-end project with all the things above
-
-
-## Running example
-
-To make it easier to connect different modules together, we’d like to use the same running example throughout the course.
-
-Possible candidates: 
-
-* [https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page](https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page) - predict the ride duration or if the driver is going to be tipped or not
 
 
 ## Instructors
@@ -159,7 +163,7 @@ Possible candidates:
 
 If you haven't used Flask or Docker
 
-* Check [Module 5](https://github.com/alexeygrigorev/mlbookcamp-code/tree/master/course-zoomcamp/05-deployment) form ML Zoomcamp
+* Check [Module 5](https://github.com/alexeygrigorev/mlbookcamp-code/tree/master/course-zoomcamp/05-deployment) from ML Zoomcamp
 * The [section about Docker](https://github.com/DataTalksClub/data-engineering-zoomcamp/tree/main/week_1_basics_n_setup/2_docker_sql) from Data Engineering Zoomcamp could also be useful
 
 If you have no previous experience with ML
@@ -184,6 +188,14 @@ No and yes. There will be two parts:
 
 * Lectures: Pre-recorded, you can watch them when it's convenient for you. 
 * Office hours: Live on Mondays (17:00 CET), but recorded, so you can watch later.
+
+
+**I just joined. Can I still get a certificate?**
+
+* To get a certificate, you need to complete a project
+* There will be two attempts to do a project
+* First: in July, second: in August
+* If you manage to finish all the materials till August, and successfully finish the project, you'll get the certificate
 
 
 ## Supporters and partners
