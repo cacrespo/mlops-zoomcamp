@@ -1,4 +1,7 @@
 journey/env
+data/
+.ipynb_checkpoints
+.bin
 *.db
 
 *.parquet
